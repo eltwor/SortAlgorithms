@@ -7,44 +7,21 @@ import java.util.TreeSet;
 public class TreeSetSet
 {
     private TreeSet<Double> treeSet;
-
-    public TreeSetSet()    // konstruktor
-    {
-        treeSet = new TreeSet<Double>();
-    }
-
+    public TreeSetSet() {treeSet = new TreeSet<Double>();} // konstruktor
     public TreeSet<Double> getTreeSet()
     {
         return treeSet;
     }
-
-    public int size() //Zwraca liczbe elementow w zbiorze
-    {
-        return treeSet.size();
-    }
-
-    public void insert(Double elem)    // wstawia element do zbioru
-    {
+    public int size() {return treeSet.size();} //Zwraca liczbe elementow w zbiorze
+    public void insert(Double elem) {   // wstawia element do zbioru
         if (!member(elem)) // sprawdza, czy dany element nalezy do zbioru
-            treeSet.add(elem);
-    }
-
-    public boolean member(Double elem)  // sprawdza, czy dany element nalezy do zbioru
-    {
-        return treeSet.contains(elem);
-    }
-
-    public boolean delete(Double elem)  // usuwa element ze zbioru
-    {
-        if (member(elem)) // sprawdza, czy dany element nalezy do zbioru
-        {
+            treeSet.add(elem); }
+    public boolean member(Double elem) {return treeSet.contains(elem);} // sprawdza, czy dany element nalezy do zbioru
+    public boolean delete(Double elem) {  // usuwa element ze zbioru
+        if (member(elem)){ // sprawdza, czy dany element nalezy do zbioru
             treeSet.remove(elem);
-            return true;
-        }
-        else return false;
-    }
-
-
+            return true; }
+        else return false; }
     public TreeSetSet union(TreeSetSet secondSet) //Oblicza sume zbioru biezacego ze zbiorem z parametru metody
     {
         TreeSetSet unionSet = new TreeSetSet();
@@ -76,7 +53,6 @@ public class TreeSetSet
             if (secondSet.member(locElem))
                 intersectionSet.insert(locElem);
         }
-
         return intersectionSet;
     }
 

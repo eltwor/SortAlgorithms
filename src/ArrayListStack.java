@@ -4,31 +4,11 @@ import java.util.ArrayList;
 public class ArrayListStack
 {
     private ArrayList<Integer> intStack;
-
-    public ArrayListStack()    // konstruktor
-    {
-        intStack = new ArrayList<Integer>();
-    }
-
-    public void push(Integer elem)    // odkłada element na szczyt stosu
-    {
-        intStack.add(elem);
-    }
-
-    public Integer pop() // pobiera element ze szczytu stosu
-    {
-        return intStack.remove(intStack.size()-1);
-    }
-
-    public Integer peek()  // podgląda wartość na szczycie stosu
-    {
-        return intStack.get(intStack.size()-1); //Zwraca ostatni element
-    }
-
-    public boolean isEmpty()    // zwraca true, jeżeli stos pusty
-    {
-        return intStack.isEmpty();
-    }
+    public ArrayListStack() {intStack = new ArrayList<Integer>();} // konstruktor
+    public void push(Integer elem) {intStack.add(elem);} // odkłada element na szczyt stosu
+    public Integer pop() {return intStack.remove(intStack.size()-1);} // pobiera element ze szczytu stosu
+    public Integer peek() {return intStack.get(intStack.size()-1);} //Zwraca ostatni element
+    public boolean isEmpty() {return intStack.isEmpty();} // zwraca true, jeżeli stos pusty
 
     public static void main(String[] args)
     {

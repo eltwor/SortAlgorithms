@@ -4,52 +4,15 @@ public class LinkedListList
 {
 
     private LinkedList<Double> oList;
-
-    public LinkedListList()          // konstruktor
-    {
-        oList = new LinkedList<Double>();
-    }
-
-    public boolean isEmpty()  // spr. czy pusta
-    {
-        return oList.isEmpty();
-    }
-
-    public void insertFirst(Double elem)  // Wstawienie na poczatek listy
-    {
-        oList.addFirst(elem);
-    }
-
-    public void insertLast(Double elem)  // Wstawienie na koniec listy
-    {
-        oList.addLast(elem);
-    }
-
-    public Double deleteFirst()     // Usuniecie pierwszego elementu listy
-    {
-        return oList.removeFirst();
-    }
-
-    public Double deleteLast()     // Usuniecie ostatniego elementu listy
-    {
-        return oList.removeLast();
-    }
-
-    public Double getFirst()     // Pobranie pierwszego elementu listy
-    {
-        return oList.getFirst();
-    }
-
-    public Double getLast()     // Pobranie ostatniego elementu listy
-    {
-        return oList.getLast();
-    }
-
-    public int size()  // rozmiar listy
-    {
-        return oList.size();
-    }
-
+    public LinkedListList() {oList = new LinkedList<Double>();} // konstruktor
+    public boolean isEmpty() {return oList.isEmpty();} // spr. czy pusta
+    public void insertFirst(Double elem) {oList.addFirst(elem);} // Wstawienie na poczatek listy
+    public void insertLast(Double elem) {oList.addLast(elem);} // Wstawienie na koniec listy
+    public Double deleteFirst() {return oList.removeFirst();} // Usuniecie pierwszego elementu listy
+    public Double deleteLast() {return oList.removeLast();} // Usuniecie ostatniego elementu listy
+    public Double getFirst() {return oList.getFirst();} // Pobranie pierwszego elementu listy
+    public Double getLast() {return oList.getLast();} // Pobranie ostatniego elementu listy
+    public int size() {return oList.size();} // rozmiar listy
     public void print()
     {
         for (int i = 0; i < oList.size(); i++)

@@ -7,36 +7,12 @@ public class LinkedListQueue
 {
 
     private LinkedList<Integer> intQueue;
-
-    public LinkedListQueue()          // konstruktor
-    {
-        intQueue = new LinkedList<Integer>();
-    }
-
-    public void insert(Integer elem)   // wstawia element na koniec kolejki
-    {
-        intQueue.addLast(elem);
-    }
-
-    public Integer remove()         // usuwa element z początku kolejki
-    {
-        return intQueue.removeFirst();
-    }
-
-    public Integer peek()      // podgląda element na początku kolejki
-    {
-        return intQueue.peekFirst().intValue();
-    }
-
-    public boolean isEmpty()    // zwraca true, jeżeli kolejka pusta
-    {
-        return intQueue.isEmpty();
-    }
-
-    public int size()           // zwraca liczbę elementów w kolejce
-    {
-        return intQueue.size();
-    }
+    public LinkedListQueue() {intQueue = new LinkedList<Integer>();} // konstruktor
+    public void insert(Integer elem) {intQueue.addLast(elem);} // wstawia element na koniec kolejki
+    public Integer remove() {return intQueue.removeFirst();} // usuwa element z początku kolejki
+    public Integer peek() {return intQueue.peekFirst().intValue();} // podgląda element na początku kolejki
+    public boolean isEmpty() {return intQueue.isEmpty();} // zwraca true, jeżeli kolejka pusta
+    public int size() {return intQueue.size();} // zwraca liczbę elementów w kolejce
 
     public static void main(String[] args)
     {

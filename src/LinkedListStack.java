@@ -3,31 +3,11 @@ import java.util.LinkedList;
 public class LinkedListStack
 {
     private LinkedList<Integer> intStack;
-
-    public LinkedListStack()    // konstruktor
-    {
-        intStack = new LinkedList<Integer>();
-    }
-
-    public void push(Integer elem)    // odkłada element na szczyt stosu
-    {
-        intStack.push(elem);
-    }
-
-    public Integer pop() // pobiera element ze szczytu stosu
-    {
-        return intStack.pop();
-    }
-
-    public Integer peek()  // podgląda wartość na szczycie stosu
-    {
-        return intStack.peek();
-    }
-
-    public boolean isEmpty()    // zwraca true, jeżeli stos pusty
-    {
-        return intStack.isEmpty();
-    }
+    public LinkedListStack() {intStack = new LinkedList<Integer>();} // konstruktor
+    public void push(Integer elem) {intStack.push(elem);} // odkłada element na szczyt stosu
+    public Integer pop() {return intStack.pop();} // pobiera element ze szczytu stosu
+    public Integer peek() {return intStack.peek();} // podgląda wartość na szczycie stosu
+    public boolean isEmpty() {return intStack.isEmpty();} // zwraca true, jeżeli stos pusty
 
     public static void main(String[] args)
     {

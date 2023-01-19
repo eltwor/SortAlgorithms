@@ -1,3 +1,5 @@
+package partA;
+
 public class ListElem
 {
     public int iData;              // Dana w elemencie listy (liczba calkowita)

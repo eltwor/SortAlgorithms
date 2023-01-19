@@ -1,3 +1,5 @@
+package partA;
+
 public class OrdStringDynArray {
     private String [] table;  //Referencja do tablicy
     private int nElems;  //Aktualna liczba elementow w tablicy

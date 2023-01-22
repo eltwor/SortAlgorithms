@@ -27,6 +27,7 @@ public class LinkedListQueue
         System.out.println("Wstawiam: 40");
         theQueue.insert(40);
 
+
         int elem = theQueue.remove();              // usuwamy 3 elementy
         System.out.println(" Usuwam: "+elem);
         System.out.println(" Usuwam: "+theQueue.remove());
